@@ -1,0 +1,8 @@
+node_modules/
+npm-debug.log
+<<<<<<< HEAD
+./app/public
+app/public/
+=======
+
+>>>>>>> e1d417aacff202a69728892824fe5ecd3748b0e6
