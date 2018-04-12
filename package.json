@@ -1,5 +1,5 @@
 {
-  "name": "tv-manager",
+  "name": "gav",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "nodemon ./server.js",
     "test": "node ./node_modules/mocha/bin/mocha"
   },
-  "author": "DreamTeam",
+  "author": "Jurandir",
   "license": "ISC",
   "dependencies": {
     "atob": "^2.0.3",

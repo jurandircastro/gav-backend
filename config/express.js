@@ -12,7 +12,7 @@ let load = require('express-load'),
 
 module.exports = function() {
 
-    mongoose.connect('mongodb://mongodb120173-tve-manager-backend.jelasticlw.com.br/', function(err) {
+    mongoose.connect('mongodb://mongodb120173-gav-backend.jelasticlw.com.br/', function(err) {
       if (err) mongoose.connect('mongodb://localhost:27017/');
     });
 

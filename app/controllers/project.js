@@ -7,9 +7,9 @@ let atob = require('atob');
 const mainController = {
 
   createProject: (data, callback) => {
-    let imageBase64 = data.image.image_path;
+    let imageBase64 = data.image_path;
     let bin = atob(imageBase64);
-    let urlImageSave = "./app/public/"+ data.name + data.image.file_type;
+    let urlImageSave = "./app/public/"+ data.name + ".jpg";
     fs.writeFile(urlImageSave, bin, "binary", function(err) {
       if (err){
         console.log(err);
@@ -21,7 +21,7 @@ const mainController = {
         "description": data.description,
         "start_date": data.start_date,
         "end_date": data.end_date,
-        "image_path": "/public/"+ data.name + data.image.file_type,
+        "image_path": "/public/"+ data.name + ".jpg",
         "admin_id": data.admin_id
       }
     ).save(function(err, obj){
